@@ -99,7 +99,11 @@ public class ChartDataSetConfigUtils {
 
                 dataSet.setValueFormatter(new LabelByXValueFormatter(labelsByXValue));
             } else {
-                dataSet.setValueFormatter(new CustomFormatter(valueFormatter));
+                if (valueFormatter.contains("PIE")) {
+                    dataSet.setValueFormatter(new CustomFormatter(valueFormatter, "PIE"));
+                } else {
+                    dataSet.setValueFormatter(new CustomFormatter(valueFormatter));
+                }
             }
         } else if (BridgeUtils.validate(config, ReadableType.Array, "valueFormatter")) {
             dataSet.setValueFormatter(new IndexValueFormatter(BridgeUtils.convertToStringArray(config.getArray("valueFormatter"))));
