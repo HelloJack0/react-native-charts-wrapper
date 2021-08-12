@@ -32,6 +32,9 @@ public class CustomFormatter extends ValueFormatter {
 
     @Override
     public String getFormattedValue(float value) {
+        if (isPieChart) {
+             return mFormat.format(value)+", "+Math.round((value*sum)/100);
+        }
         return mFormat.format(value);
     }
 
