@@ -71,11 +71,19 @@ class ChartDataSetConfigUtils: NSObject {
 
                 dataSet.valueFormatter = LabelByXValueFormatter(labelsByXValue);
             } else {
-                let customFormatter = NumberFormatter()
-                customFormatter.positiveFormat = valueFormatter.stringValue
-                customFormatter.negativeFormat = valueFormatter.stringValue
-
-                dataSet.valueFormatter = DefaultValueFormatter(formatter: customFormatter);
+                if (valueFormatter.stringValue.contains("PIE")) {
+                     let strArray: Array = (valueFormatter.stringValue.components(separatedBy: "PIE"))
+                     let customFormatter = NumberFormatter()
+                     customFormatter.positiveFormat = strArray[0]
+                     customFormatter.negativeFormat = strArray[0]
+                //   print("chart format ary \(strArray[0])==\(strArray[1])")
+                     dataSet.valueFormatter = PieFormatter(formatter: customFormatter);
+                 } else {
+                      let customFormatter = NumberFormatter()
+                      customFormatter.positiveFormat = valueFormatter.stringValue
+                      customFormatter.negativeFormat = valueFormatter.stringValue
+                      dataSet.valueFormatter = DefaultValueFormatter(formatter: customFormatter);
+                }
             }
         } else if valueFormatter.array != nil {
             dataSet.valueFormatter = IndexValueFormatter(values: valueFormatter.arrayValue.map({ $0.stringValue }))
