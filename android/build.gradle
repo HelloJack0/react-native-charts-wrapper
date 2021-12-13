@@ -9,7 +9,7 @@ buildscript {
             google()
             jcenter()
         }
-        
+
         dependencies {
             classpath("com.android.tools.build:gradle:3.5.3")
         }
@@ -39,5 +39,4 @@ repositories {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "com.facebook.react:react-native:+"  // From node_modules
-    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }
