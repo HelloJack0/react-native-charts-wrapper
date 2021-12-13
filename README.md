@@ -1,4 +1,3 @@
-#增加柱状图圆角显示
 # React Native Charts Wrapper
 This library is React Native wrapper of popular Native charting library [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) and [Charts](https://github.com/danielgindi/Charts)
 
