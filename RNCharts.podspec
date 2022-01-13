@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.dependency 'React'
   s.dependency 'SwiftyJSON', '5.0'
-  s.dependency 'FeyddyCharts', '3.6.0'
+  s.dependency 'ChartsRoundGradient', '3.6.1'
 
 
 end
