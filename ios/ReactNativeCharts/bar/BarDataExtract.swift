@@ -52,6 +52,10 @@ class BarDataExtract : DataExtract {
         if config["stackLabels"].array != nil {
             barDataSet.stackLabels = config["stackLabels"].arrayValue.map({ return $0.stringValue })
         }
+        if config["gridColors"].array != nil {
+            barDataSet.gridColors = config["gridColors"].arrayValue.map({ return $0.stringValue })
+
+        }
     }
     
     override func createEntry(_ values: [JSON], index: Int) -> BarChartDataEntry {
