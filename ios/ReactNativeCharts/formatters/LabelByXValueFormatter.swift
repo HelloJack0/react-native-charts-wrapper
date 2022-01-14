@@ -1,5 +1,5 @@
 import Foundation
-import Charts
+import ChartsRoundGradient
 
 open class LabelByXValueFormatter: NSObject, IValueFormatter, IAxisValueFormatter {
 

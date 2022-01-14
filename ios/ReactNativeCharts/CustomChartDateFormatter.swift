@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Charts
+import ChartsRoundGradient
 
 open class CustomChartDateFormatter: NSObject, IValueFormatter, IAxisValueFormatter {
     

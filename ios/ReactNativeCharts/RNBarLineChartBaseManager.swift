@@ -4,7 +4,7 @@
 //
 
 import Foundation
-import Charts
+import ChartsRoundGradient
 
 protocol RNBarLineChartBaseManager {
   var _bridge : RCTBridge? {get}

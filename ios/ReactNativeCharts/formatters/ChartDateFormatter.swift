@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Charts
+import ChartsRoundGradient
 
 open class ChartDateFormatter: NSObject, IValueFormatter, IAxisValueFormatter {
 

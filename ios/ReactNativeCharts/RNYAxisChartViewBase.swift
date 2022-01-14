@@ -4,7 +4,7 @@
 //
 
 import Foundation
-import Charts
+import ChartsRoundGradient
 import SwiftyJSON
 
 class RNYAxisChartViewBase: RNChartViewBase {

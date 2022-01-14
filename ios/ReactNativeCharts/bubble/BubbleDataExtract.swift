@@ -5,7 +5,7 @@
 import Foundation
 
 import SwiftyJSON
-import Charts
+import ChartsRoundGradient
 
 class BubbleDataExtract : DataExtract {
     override func createData() -> ChartData {

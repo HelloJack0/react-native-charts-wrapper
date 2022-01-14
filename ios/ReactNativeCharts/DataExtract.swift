@@ -3,7 +3,7 @@
 //
 
 import Foundation
-import Charts
+import ChartsRoundGradient
 import SwiftyJSON
 
 open class DataExtract {

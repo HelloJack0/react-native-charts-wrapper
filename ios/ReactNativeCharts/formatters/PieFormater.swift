@@ -3,7 +3,7 @@
 //  Charts
 //
 import Foundation
-import Charts
+import ChartsRoundGradient
 @objc(PieFormatter)
 open class PieFormatter: NSObject, IValueFormatter
 {
