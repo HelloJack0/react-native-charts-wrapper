@@ -5,7 +5,7 @@
 import Foundation
 
 import SwiftyJSON
-import Charts
+import ChartsRoundGradient
 
 class BarDataExtract : DataExtract {
     override open func createData() -> ChartData {
